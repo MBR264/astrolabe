@@ -1,0 +1,55 @@
+/* Make html and body fill screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body flex layout */
+body {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    font-family: sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Top instructions */
+#top-text {
+    flex: 0;       /* only take needed space */
+    width: 100%;
+}
+
+/* Canvas wrapper */
+#canvas-wrapper {
+    flex: 1;       /* fills remaining vertical space */
+    display: flex;
+    flex-direction: column; /* stack canvas + link vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Canvas container */
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back link below canvas */
+#back-link {
+
+    font-size: 14px;
+    color: purple;
+    text-decoration: underline;
+    margin-top: 12.5px; /* spacing below canvas */
+}
+
+/* Instructions text */
+.instruction {
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+}
+

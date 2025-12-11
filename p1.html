@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>phone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <script src="p5.min.js"></script>
+    <script src="sketch.js" defer></script>
+    <link href="p1style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Top instructions -->
+    <div id="top-text">
+      <h1 id="light" class="instruction"> 
+        The astrolabe requires light to take a reading. Please move to a brighter enviroment.
+      </h1>
+
+      <h1 id="direction" class="instruction"> 
+        The astrolabe requires you to face north to take a reading. Please do so.
+      </h1>
+
+      <h1 id="angle" class="instruction"> 
+        Please lift your iPhone vertical to take a reading of the current time.
+      </h1>
+
+      <h1 id="result" class="instruction" style="display:none;">
+        Time reading:
+      </h1>
+    </div>
+
+    <!-- Canvas in the center -->
+    <div id="canvas-wrapper">
+      <div id="canvas-container"></div>
+      <!-- Back link now directly below canvas -->
+      <a id="back-link" href="index.html" style="display:none;">
+        Click to return to index page
+      </a>
+    </div>
+
+    <!-- Fix for Mobile Safari 100vh issue -->
+    <script>
+      function resizeFix() {
+        document.body.style.height = window.innerHeight + 'px';
+      }
+
+      window.addEventListener('load', resizeFix);
+      window.addEventListener('resize', resizeFix);
+      window.addEventListener('orientationchange', resizeFix);
+    </script>
+  </body>
+</html>
+

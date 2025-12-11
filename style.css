@@ -1,0 +1,39 @@
+
+  
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  
+
+  .universe {
+    
+    font-size: 18px;          
+    margin-top: 30px;         
+    margin-bottom: 5px;     
+    text-align: center;
+   
+  }
+
+  .body {
+
+    font-size:14px;          
+    margin-top: 5px;         
+    margin-bottom: 10px;     
+    text-align: center;
+  }
+
+  .link {
+
+    font-size:14px;          
+    margin-top: 5px;         
+    margin-bottom: 10px;     
+    text-align: center;
+  }
